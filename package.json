@@ -5,13 +5,18 @@
   "main": "app.js",
   "dependencies": {
     "express": "^4.17.1",
-    "morgan": "^1.9.1",
-    "nodemon": "^1.19.4"
+    "morgan": "^1.9.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "nodemon": "^1.19.4",
+    "supertest": "^4.0.2"
+  },
   "scripts": {
-    "start": "nodemon app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server",
+    "debug": "ndb node server",
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
